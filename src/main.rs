@@ -68,7 +68,6 @@ fn print_tree(path: &Path, prefix: &str) {
         }
     }
 
-
     if has_more {
         let remaining = total - show;
         println!("{prefix}└── ... (+{} more)", remaining);
