@@ -52,22 +52,22 @@ impl Statistics {
     }
 
     fn print_summary(&self) {
-        println!("\n📊 統計情報:");
-        println!("   - ファイル数: {}", self.files);
-        println!("   - ディレクトリ数: {}", self.dirs);
-        println!("   - 合計サイズ: {}", format_size(self.total_size));
+        println!("\n📊 Statistics:");
+        println!("   - Files: {}", self.files);
+        println!("   - Directories: {}", self.dirs);
+        println!("   - Total size: {}", format_size(self.total_size));
 
         if self.files > 0 {
             let avg_size = self.total_size / self.files as u64;
-            println!("   - 平均ファイルサイズ: {}", format_size(avg_size));
+            println!("   - Average file size: {}", format_size(avg_size));
         }
 
         if let Some((name, size)) = &self.max_file {
-            println!("   - 最大ファイル: {} ({})", name, format_size(*size));
+            println!("   - Largest file: {} ({})", name, format_size(*size));
         }
 
         if !self.errors.is_empty() {
-            println!("\n⚠️  警告:");
+            println!("\n⚠️  Warnings:");
             for error in &self.errors {
                 println!("   - {}", error);
             }

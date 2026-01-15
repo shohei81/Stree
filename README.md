@@ -62,12 +62,12 @@ stree ~
 ├── LICENSE
 └── ... (+3 more)
 
-📊 統計情報:
-   - ファイル数: 9
-   - ディレクトリ数: 1
-   - 合計サイズ: 2.6 KB
-   - 平均ファイルサイズ: 298 B
-   - 最大ファイル: LICENSE (1.0 KB)
+📊 Statistics:
+   - Files: 9
+   - Directories: 1
+   - Total size: 2.6 KB
+   - Average file size: 298 B
+   - Largest file: LICENSE (1.0 KB)
 ```
 
 ## Design Philosophy
